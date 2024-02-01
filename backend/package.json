@@ -3,7 +3,7 @@
   "module": "/src/index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun --watch  src/index.ts"
+    "dev": "tsx watch  src/index.ts"
   },
   "devDependencies": {
     "@biomejs/biome": "1.5.3",
@@ -18,7 +18,10 @@
   },
   "dependencies": {
     "@prisma/client": "5.9.1",
+    "argon2": "^0.31.2",
+    "dotenv": "^16.4.1",
     "fastify": "^4.26.0",
+    "tsx": "^4.7.0",
     "zod": "^3.22.4"
   }
 }
