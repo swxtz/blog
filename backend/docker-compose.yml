@@ -1,0 +1,16 @@
+version: "3"
+
+services: 
+  db-cockroachdb:
+    container_name: cockroachdb-blog
+    image: cockroachdb/cockroach:v23.1.13
+    ports:
+      - 26257:26257
+      - 9001:8080
+    environment:
+      - COCKROACH_DATABASE=blog
+      - COCKROACH_USER=dev
+      - COCKROACH_PASSWORD=cockroach
+    command: start-single-node
+    volumes:
+      - ./docker/cockroachdb:/cockroach/cockroach-data
