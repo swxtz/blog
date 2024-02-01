@@ -1,12 +1,22 @@
 {
   "name": "backend",
-  "module": "index.ts",
+  "module": "/src/index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "bun --watch  src/index.ts"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.5.3",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "^8.56.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "fastify": "^4.26.0",
+    "zod": "^3.22.4"
   }
 }
