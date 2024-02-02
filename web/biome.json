@@ -8,6 +8,11 @@
                 "noUnusedImports": {
                     "level": "error"
                 }
+            },
+            "correctness": {
+                "noUnusedVariables": {
+                    "level": "warn"
+                }
             }
         }
     }
