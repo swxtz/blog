@@ -7,7 +7,7 @@ import { Menu } from "lucide-react";
 
 export function Navbar() {
     return (
-        <nav className="px-6 pt-4 pb-20 md:pt-14 md:pb-40 md:px-20 flex items-center justify-between">
+        <nav className="px-6 pt-4 pb-20 md:pt-14 md:pb-20 md:px-20 flex items-center justify-between">
             <Link href="/">
                 <Image src={logo} alt="Blogga" />
             </Link>
