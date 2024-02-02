@@ -1,4 +1,14 @@
 {
     "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
-    "extends": ["../biome.json"]
+    "extends": ["../biome.json"],
+    "linter": {
+        "rules": {
+            "recommended": true,
+            "nursery": {
+                "noUnusedImports": {
+                    "level": "error"
+                }
+            }
+        }
+    }
 }
